@@ -15,11 +15,11 @@ public class Main {
         System.out.println("enter the student id");
         int studentid=sc.nextInt();
         System.out.println("enter the student name");
-        String studentname=sc.nextLine();
+        String studentname=sc.next();
         System.out.println("enter the student age");
         int age=sc.nextInt();
         System.out.println("enter the student department");
-        String department=sc.nextLine();
+        String department=sc.next();
         System.out.println("number of subjects"); 
         int n=sc.nextInt();
         int[] marks=new int[n];
@@ -37,7 +37,6 @@ public class Main {
         Student.displayStudentCount();
         StudentService studentService = new StudentService();
         studentService.displayReportCard(student);
-        student.eligbleForScholarship();
         sc.close(); 
     }
 
